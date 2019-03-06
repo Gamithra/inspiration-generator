@@ -27,14 +27,3 @@ def fetch_quote():
 def error404(error):
     return "404!!! not found!!!! error! whoops"
 
-#class StripPathMiddleware(object):
-#    def __init__(self, a):
-#        self.a = a
-#    def __call__(self, e, h):
-#        e['PATH_INFO'] = e['PATH_INFO'].rstrip('/')
-#        return self.a(e, h)
-
-#if __name__ == '__main__':
-#    bottle.run(app=StripPathMiddleware(app),
-#        host='0.0.0.0',
-#        port=8080)
