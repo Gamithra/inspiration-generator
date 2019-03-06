@@ -45,7 +45,7 @@ class QuoteMachine extends React.Component {
             <h3 id="text">{this.state.currentQuote}</h3>
             <h5 id="author">- {this.state.currentAuthor}</h5>
             <div className="button-box">
-               <a id="tweet-quote" target="_blank" rel="noopener noreferrer" href={"https://twitter.com/intent/tweet?text="+this.state.currentQuote}><button id="tweet-button"><FontAwesomeIcon icon={faTwitter} /> Tweet</button></a>
+               <a id="tweet-quote" target="_blank" rel="noopener noreferrer" href={"https://twitter.com/intent/tweet?text="+'"'+this.state.currentQuote+'" -- '+this.state.currentAuthor + "&hashtags=randomlygeneratedinspiration"}><button id="tweet-button"><FontAwesomeIcon icon={faTwitter} /> Tweet</button></a>
               <button onClick={this.fetchQuote} id="new-quote">New quote ></button>
             </div>
           </div>
